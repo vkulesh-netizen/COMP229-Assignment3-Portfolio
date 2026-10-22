@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="506" viewBox="0 0 900 506">
+  <rect width="900" height="506" fill="#fff7ed"/>
+  <rect x="205" y="90" width="490" height="315" rx="22" fill="#fff" stroke="#fdba74" stroke-width="8"/>
+  <text x="450" y="175" text-anchor="middle" font-family="Arial" font-size="44" font-weight="700" fill="#9a3412">JAVA</text>
+  <rect x="270" y="220" width="360" height="24" rx="8" fill="#fed7aa"/>
+  <rect x="270" y="265" width="290" height="24" rx="8" fill="#fed7aa"/>
+  <rect x="270" y="310" width="330" height="24" rx="8" fill="#fed7aa"/>
+  <text x="450" y="462" text-anchor="middle" font-family="Arial" font-size="30" fill="#431407">Bank Account Application</text>
+</svg>

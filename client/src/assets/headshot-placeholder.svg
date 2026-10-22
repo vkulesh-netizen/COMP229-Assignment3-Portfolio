@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="720" height="720" viewBox="0 0 720 720" role="img" aria-labelledby="title desc">
+  <title id="title">Headshot placeholder</title>
+  <desc id="desc">Replace this placeholder with your own head and shoulders photo before submitting.</desc>
+  <rect width="720" height="720" rx="54" fill="#eff6ff"/>
+  <circle cx="360" cy="270" r="125" fill="#93c5fd"/>
+  <path d="M145 650c25-160 110-250 215-250s190 90 215 250" fill="#60a5fa"/>
+  <text x="360" y="680" text-anchor="middle" font-family="Arial, sans-serif" font-size="28" fill="#1e3a8a">Replace with your photo</text>
+</svg>
