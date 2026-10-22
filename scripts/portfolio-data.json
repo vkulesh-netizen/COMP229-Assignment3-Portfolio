@@ -1,0 +1,99 @@
+{
+  "projects": [
+    {
+      "title": "React Personal Portfolio",
+      "firstname": "Vitaliy",
+      "lastname": "Kulesh",
+      "email": "vkulesh@example.com",
+      "completion": "2026-09-18",
+      "description": "Designed a six-page responsive portfolio with React routing, reusable components, custom styling and a contact form.",
+      "role": "Student Developer",
+      "technologies": "React, TypeScript, Vite, React Router, CSS",
+      "imageKey": "web"
+    },
+    {
+      "title": "Java Bank Account Application",
+      "firstname": "Vitaliy",
+      "lastname": "Kulesh",
+      "email": "vkulesh@example.com",
+      "completion": "2026-09-18",
+      "description": "Built an object-oriented Java program that demonstrates classes, constructors, methods and test objects for account operations.",
+      "role": "Java Developer",
+      "technologies": "Java, Eclipse, OOP",
+      "imageKey": "java"
+    },
+    {
+      "title": "Simple Reflex AI Agent",
+      "firstname": "Vitaliy",
+      "lastname": "Kulesh",
+      "email": "vkulesh@example.com",
+      "completion": "2026-09-18",
+      "description": "Modified and analyzed a simple reflex-agent program and documented its behavior, structure and design concepts.",
+      "role": "AI Programming Student",
+      "technologies": "Python, AI Concepts, UML",
+      "imageKey": "ai"
+    }
+  ],
+  "qualifications": [
+    {
+      "title": "Software Engineering Technology – Artificial Intelligence",
+      "school": "Centennial College",
+      "period": "2026 – Present",
+      "description": "Current studies include programming, web application development, software engineering, databases and artificial intelligence.",
+      "firstname": "Vitaliy",
+      "lastname": "Kulesh",
+      "email": "vkulesh@example.com",
+      "completion": "2027-12-31"
+    },
+    {
+      "title": "Bachelor’s Degree – Mechanical Engineering and Marine Automation",
+      "school": "Odessa Marine University, Odessa, Ukraine",
+      "period": "1982 – 1987",
+      "description": "University education focused on mechanical engineering, marine automation and technical systems used aboard ships.",
+      "firstname": "Vitaliy",
+      "lastname": "Kulesh",
+      "email": "vkulesh@example.com",
+      "completion": "1987-06-01"
+    },
+    {
+      "title": "Marine Technical Training",
+      "school": "Georgian College, Owen Sound, Ontario, Canada",
+      "period": "1998 – 1999",
+      "description": "Completed Propulsion Plant Simulator Level 2 and Marine Emergency Duties officer and senior officer courses.",
+      "firstname": "Vitaliy",
+      "lastname": "Kulesh",
+      "email": "vkulesh@example.com",
+      "completion": "1999-06-01"
+    },
+    {
+      "title": "Marine Safety Training",
+      "school": "Holland College, Summerside, PEI, Canada",
+      "period": "2001",
+      "description": "Completed Basic Survival, Survival Craft, Fire Fighting, Marine Advanced First Aid and CPR training.",
+      "firstname": "Vitaliy",
+      "lastname": "Kulesh",
+      "email": "vkulesh@example.com",
+      "completion": "2001-06-01"
+    },
+    {
+      "title": "Marine / Tanker Safety Training",
+      "school": "Memorial University of Newfoundland, Canada",
+      "period": "2000 – 2002",
+      "description": "Completed Inert Gas / Crude Oil Wash training and Advanced Petroleum Tanker Safety training.",
+      "firstname": "Vitaliy",
+      "lastname": "Kulesh",
+      "email": "vkulesh@example.com",
+      "completion": "2002-06-01"
+    },
+    {
+      "title": "Kongsberg DP Maintenance Course",
+      "school": "Kongsberg Training Center, Halifax, Canada",
+      "period": "2014",
+      "description": "Professional training in dynamic positioning system maintenance.",
+      "firstname": "Vitaliy",
+      "lastname": "Kulesh",
+      "email": "vkulesh@example.com",
+      "completion": "2014-06-01"
+    }
+  ]
+}
