@@ -1,0 +1,38 @@
+{
+  "name": "comp229-assignment3-vitaliy-kulesh",
+  "version": "3.0.0",
+  "private": true,
+  "type": "module",
+  "description": "COMP229 Assignment 3 - Portfolio Application with Node.js, Express REST APIs, MongoDB, Mongoose and JWT authentication",
+  "author": "Vitaliy Kulesh - 301559060",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "server": "node server.js",
+    "server:dev": "nodemon server.js",
+    "client": "npm --prefix client run dev",
+    "dev": "concurrently \"npm run server:dev\" \"npm run client\"",
+    "build": "npm --prefix client install && npm --prefix client run build",
+    "seed": "node scripts/seed.js",
+    "test": "node tests/integration.mjs"
+  },
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "compression": "^1.7.5",
+    "cookie-parser": "^1.4.7",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
+    "express": "^4.21.0",
+    "helmet": "^8.0.0",
+    "jsonwebtoken": "^9.0.2",
+    "mongoose": "^8.7.0"
+  },
+  "devDependencies": {
+    "concurrently": "^9.0.1",
+    "nodemon": "^3.1.7"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}
+
