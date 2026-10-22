@@ -1,0 +1,194 @@
+{
+  "info": {
+    "_postman_id": "55db38b4-f6ad-4bdd-9259-301559060002",
+    "name": "COMP229 Assignment 2 - Vitaliy Kulesh",
+    "description": "CRUD and JWT authentication tests for COMP229 Assignment 2 Portfolio API.",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "variable": [
+    { "key": "baseUrl", "value": "http://localhost:3000" },
+    { "key": "contactId", "value": "" },
+    { "key": "projectId", "value": "" },
+    { "key": "qualificationId", "value": "" },
+    { "key": "userId", "value": "" },
+    { "key": "token", "value": "" }
+  ],
+  "item": [
+    {
+      "name": "Contacts",
+      "item": [
+        {
+          "name": "POST Contact",
+          "event": [{
+            "listen": "test",
+            "script": { "exec": [
+              "if (pm.response.code === 201) {",
+              "  const body = pm.response.json();",
+              "  pm.collectionVariables.set('contactId', body._id);",
+              "}"
+            ]}
+          }],
+          "request": {
+            "method": "POST",
+            "header": [{ "key": "Content-Type", "value": "application/json" }],
+            "body": { "mode": "raw", "raw": "{\n  \"firstname\": \"Vitaliy\",\n  \"lastname\": \"Kulesh\",\n  \"email\": \"contact.vitaliy@example.com\"\n}" },
+            "url": "{{baseUrl}}/api/contacts"
+          }
+        },
+        { "name": "GET All Contacts", "request": { "method": "GET", "url": "{{baseUrl}}/api/contacts" } },
+        { "name": "GET Contact By Id", "request": { "method": "GET", "url": "{{baseUrl}}/api/contacts/{{contactId}}" } },
+        {
+          "name": "PUT Contact By Id",
+          "request": {
+            "method": "PUT",
+            "header": [{ "key": "Content-Type", "value": "application/json" }],
+            "body": { "mode": "raw", "raw": "{\n  \"firstname\": \"Vitaliy\",\n  \"lastname\": \"Kulesh Updated\",\n  \"email\": \"contact.vitaliy@example.com\"\n}" },
+            "url": "{{baseUrl}}/api/contacts/{{contactId}}"
+          }
+        },
+        { "name": "DELETE Contact By Id", "request": { "method": "DELETE", "url": "{{baseUrl}}/api/contacts/{{contactId}}" } },
+        { "name": "DELETE All Contacts", "request": { "method": "DELETE", "url": "{{baseUrl}}/api/contacts" } }
+      ]
+    },
+    {
+      "name": "Projects",
+      "item": [
+        {
+          "name": "POST Project",
+          "event": [{
+            "listen": "test",
+            "script": { "exec": [
+              "if (pm.response.code === 201) {",
+              "  const body = pm.response.json();",
+              "  pm.collectionVariables.set('projectId', body._id);",
+              "}"
+            ]}
+          }],
+          "request": {
+            "method": "POST",
+            "header": [{ "key": "Content-Type", "value": "application/json" }],
+            "body": { "mode": "raw", "raw": "{\n  \"title\": \"React Personal Portfolio\",\n  \"firstname\": \"Vitaliy\",\n  \"lastname\": \"Kulesh\",\n  \"email\": \"vitaliy@example.com\",\n  \"completion\": \"2026-09-18\",\n  \"description\": \"React and TypeScript personal portfolio.\"\n}" },
+            "url": "{{baseUrl}}/api/projects"
+          }
+        },
+        { "name": "GET All Projects", "request": { "method": "GET", "url": "{{baseUrl}}/api/projects" } },
+        { "name": "GET Project By Id", "request": { "method": "GET", "url": "{{baseUrl}}/api/projects/{{projectId}}" } },
+        {
+          "name": "PUT Project By Id",
+          "request": {
+            "method": "PUT",
+            "header": [{ "key": "Content-Type", "value": "application/json" }],
+            "body": { "mode": "raw", "raw": "{\n  \"description\": \"Updated Assignment 2 project description.\"\n}" },
+            "url": "{{baseUrl}}/api/projects/{{projectId}}"
+          }
+        },
+        { "name": "DELETE Project By Id", "request": { "method": "DELETE", "url": "{{baseUrl}}/api/projects/{{projectId}}" } },
+        { "name": "DELETE All Projects", "request": { "method": "DELETE", "url": "{{baseUrl}}/api/projects" } }
+      ]
+    },
+    {
+      "name": "Qualifications",
+      "item": [
+        {
+          "name": "POST Qualification",
+          "event": [{
+            "listen": "test",
+            "script": { "exec": [
+              "if (pm.response.code === 201) {",
+              "  const body = pm.response.json();",
+              "  pm.collectionVariables.set('qualificationId', body._id);",
+              "}"
+            ]}
+          }],
+          "request": {
+            "method": "POST",
+            "header": [{ "key": "Content-Type", "value": "application/json" }],
+            "body": { "mode": "raw", "raw": "{\n  \"title\": \"Software Engineering Technology - Artificial Intelligence\",\n  \"firstname\": \"Vitaliy\",\n  \"lastname\": \"Kulesh\",\n  \"email\": \"vitaliy@example.com\",\n  \"completion\": \"2027-12-31\",\n  \"description\": \"Centennial College program.\"\n}" },
+            "url": "{{baseUrl}}/api/qualifications"
+          }
+        },
+        { "name": "GET All Qualifications", "request": { "method": "GET", "url": "{{baseUrl}}/api/qualifications" } },
+        { "name": "GET Qualification By Id", "request": { "method": "GET", "url": "{{baseUrl}}/api/qualifications/{{qualificationId}}" } },
+        {
+          "name": "PUT Qualification By Id",
+          "request": {
+            "method": "PUT",
+            "header": [{ "key": "Content-Type", "value": "application/json" }],
+            "body": { "mode": "raw", "raw": "{\n  \"description\": \"Updated qualification description.\"\n}" },
+            "url": "{{baseUrl}}/api/qualifications/{{qualificationId}}"
+          }
+        },
+        { "name": "DELETE Qualification By Id", "request": { "method": "DELETE", "url": "{{baseUrl}}/api/qualifications/{{qualificationId}}" } },
+        { "name": "DELETE All Qualifications", "request": { "method": "DELETE", "url": "{{baseUrl}}/api/qualifications" } }
+      ]
+    },
+    {
+      "name": "Users",
+      "item": [
+        {
+          "name": "POST User",
+          "event": [{
+            "listen": "test",
+            "script": { "exec": [
+              "if (pm.response.code === 201) {",
+              "  const body = pm.response.json();",
+              "  pm.collectionVariables.set('userId', body._id);",
+              "}"
+            ]}
+          }],
+          "request": {
+            "method": "POST",
+            "header": [{ "key": "Content-Type", "value": "application/json" }],
+            "body": { "mode": "raw", "raw": "{\n  \"name\": \"Vitaliy Kulesh\",\n  \"email\": \"vitaliy@example.com\",\n  \"password\": \"Password123!\"\n}" },
+            "url": "{{baseUrl}}/api/users"
+          }
+        },
+        { "name": "GET All Users", "request": { "method": "GET", "url": "{{baseUrl}}/api/users" } },
+        { "name": "GET User By Id", "request": { "method": "GET", "url": "{{baseUrl}}/api/users/{{userId}}" } },
+        {
+          "name": "PUT User By Id",
+          "request": {
+            "method": "PUT",
+            "header": [{ "key": "Content-Type", "value": "application/json" }],
+            "body": { "mode": "raw", "raw": "{\n  \"name\": \"Vitaliy Kulesh Updated\"\n}" },
+            "url": "{{baseUrl}}/api/users/{{userId}}"
+          }
+        },
+        { "name": "DELETE User By Id", "request": { "method": "DELETE", "url": "{{baseUrl}}/api/users/{{userId}}" } },
+        { "name": "DELETE All Users", "request": { "method": "DELETE", "url": "{{baseUrl}}/api/users" } }
+      ]
+    },
+    {
+      "name": "Authentication",
+      "item": [
+        {
+          "name": "POST Sign In",
+          "event": [{
+            "listen": "test",
+            "script": { "exec": [
+              "if (pm.response.code === 200) {",
+              "  const body = pm.response.json();",
+              "  pm.collectionVariables.set('token', body.token);",
+              "}"
+            ]}
+          }],
+          "request": {
+            "method": "POST",
+            "header": [{ "key": "Content-Type", "value": "application/json" }],
+            "body": { "mode": "raw", "raw": "{\n  \"email\": \"vitaliy@example.com\",\n  \"password\": \"Password123!\"\n}" },
+            "url": "{{baseUrl}}/auth/signin"
+          }
+        },
+        {
+          "name": "GET Protected Route",
+          "request": {
+            "method": "GET",
+            "header": [{ "key": "Authorization", "value": "Bearer {{token}}" }],
+            "url": "{{baseUrl}}/api/protected"
+          }
+        },
+        { "name": "GET Sign Out", "request": { "method": "GET", "url": "{{baseUrl}}/auth/signout" } }
+      ]
+    }
+  ]
+}
