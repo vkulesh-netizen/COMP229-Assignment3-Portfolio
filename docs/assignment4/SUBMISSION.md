@@ -28,4 +28,4 @@ The initial production JavaScript decreased from 185118 to 170988 bytes (7.6%). 
 
 Branch `assignment4-release` was merged into `main` as commit `4e8704357a921af34ad577820fa5f07ef6184841`. Render automatically deployed it, and the new homepage paragraph was verified on the public URL. Hosted health, three projects, six qualifications and rejection of anonymous project writes were verified.
 
-Hosted administrator sign-in and authenticated CRUD still require confirmation with the private administrator credentials. Local administrator integration tests passed; that does not establish the hosted credential check. No secrets are included in the package.
+After password recovery, the owner confirmed hosted administrator sign-in and temporary-record create, read, update and delete operations for Projects, Education and Contacts. The earlier credential-verification item is resolved. This owner-performed manual verification is separate from the recorded automated Cypress run. No secrets are included in the package.

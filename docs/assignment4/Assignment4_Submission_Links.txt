@@ -15,4 +15,4 @@ Merged release: https://github.com/vkulesh-netizen/COMP229-Assignment3-Portfolio
 
 Six unit tests and five Cypress E2E tests passed. API integration and production build passed. The merge auto-deployed on Render and the new homepage content was verified. Initial JavaScript decreased 7.6%.
 
-Cypress ran against the isolated database on GitHub Actions. Hosted administrator sign-in and authenticated CRUD still need confirmation with the private admin credentials. The Word report states this limit clearly.
+Cypress ran against the isolated database on GitHub Actions. After password recovery, the owner confirmed hosted administrator sign-in and temporary-record CRUD for Projects, Education and Contacts. The earlier remaining check is resolved. The Word report identifies this as owner-performed manual verification.
