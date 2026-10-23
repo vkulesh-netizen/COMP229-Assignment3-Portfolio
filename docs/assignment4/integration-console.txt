@@ -1,0 +1,1 @@
+PASS: registration cannot grant admin; JWT login; admin CRUD for three collections; reader denied mutations; anonymous denied protected access; contact message persisted; invalid password rejected; signout endpoint.

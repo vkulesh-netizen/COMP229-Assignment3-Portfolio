@@ -1,0 +1,28 @@
+
+> vitaliy-react-portfolio@1.0.0 test:unit
+> vitest run --reporter=default --reporter=json --outputFile=../test-results/unit-results.json
+
+
+ RUN  v2.1.9 C:/Users/Stu Dent/Documents/Codex/A4/client
+
+stderr | tests/Home.test.tsx > provides working navigation targets
+⚠️ React Router Future Flag Warning: React Router will begin wrapping state updates in `React.startTransition` in v7. You can use the `v7_startTransition` future flag to opt-in early. For more information, see https://reactrouter.com/v6/upgrading/future#v7_starttransition.
+⚠️ React Router Future Flag Warning: Relative route resolution within Splat routes is changing in v7. You can use the `v7_relativeSplatPath` future flag to opt-in early. For more information, see https://reactrouter.com/v6/upgrading/future#v7_relativesplatpath.
+
+ ✓ tests/Home.test.tsx (2 tests) 233ms
+ ✓ tests/Contact.test.tsx (4 tests) 3877ms
+   ✓ Contact page > submits all fields and resets the form after success 1164ms
+   ✓ Contact page > retains entered data and shows a server error 1147ms
+   ✓ Contact page > disables duplicate submissions while the request is pending 1272ms
+
+ Test Files  2 passed (2)
+      Tests  6 passed (6)
+   Start at  21:28:04
+   Duration  17.32s (transform 358ms, setup 6.38s, collect 1.13s, tests 4.11s, environment 16.23s, prepare 1.06s)
+
+JSON report written to C:/Users/Stu Dent/Documents/Codex/A4/test-results/unit-results.json
+npm notice
+npm notice New major version of npm available! 11.17.0 -> 12.2.1
+npm notice Changelog: https://github.com/npm/cli/releases/tag/v12.2.1
+npm notice To update run: npm install -g npm@12.2.1
+npm notice
