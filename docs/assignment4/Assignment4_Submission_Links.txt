@@ -1,0 +1,18 @@
+COMP229 ASSIGNMENT 4 — Vitaliy Kulesh — 301559060
+
+REQUIRED SUBMISSION
+Live app: https://comp229-assignment3-portfolio.onrender.com/
+GitHub: https://github.com/vkulesh-netizen/COMP229-Assignment3-Portfolio
+Word report: Assignment4_Testing_Deployment_Report.docx
+Online submission index: https://github.com/vkulesh-netizen/COMP229-Assignment3-Portfolio/blob/main/docs/assignment4/SUBMISSION.md
+
+SUPPORTING EVIDENCE
+Cypress recording: Assignment4_Cypress_E2E_Recording.mp4
+Test screenshots and JUnit output: Assignment4_Cypress_Evidence.zip
+Project source and test code: Assignment4_SOURCE.zip
+CI run: https://github.com/vkulesh-netizen/COMP229-Assignment3-Portfolio/actions/runs/39884604140
+Merged release: https://github.com/vkulesh-netizen/COMP229-Assignment3-Portfolio/pull/1
+
+Six unit tests and five Cypress E2E tests passed. API integration and production build passed. The merge auto-deployed on Render and the new homepage content was verified. Initial JavaScript decreased 7.6%.
+
+Cypress ran against the isolated database on GitHub Actions. Hosted administrator sign-in and authenticated CRUD still need confirmation with the private admin credentials. The Word report states this limit clearly.
