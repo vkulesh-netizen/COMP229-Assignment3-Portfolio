@@ -39,3 +39,10 @@ Use an Express-capable host with MongoDB Atlas. Build: npm install && npm run bu
 The public hosted pages and API health were verified, along with rejection of unauthenticated project writes. Local authentication and administrator CRUD workflows were tested. The report distinguishes local administrator evidence from hosted public-page evidence.
 
 The original Assignment 2 Postman collection is retained as a starting point. Protected CRUD requests require an administrator session or Bearer token.
+
+## Assignment 4 testing and deployment
+
+See [Assignment 4 report, Cypress recording and submission links](docs/assignment4/SUBMISSION.md).
+
+Run `npm run test:unit` for React tests, `npm test` for API integration, and `npm run test:e2e` for Cypress (start the production server on port 3004 first). CI starts its own isolated MongoDB service. The original design is retained; secondary pages load on demand and hashed assets are cached.
+
