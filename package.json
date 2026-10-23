@@ -12,7 +12,7 @@
     "server:dev": "nodemon server.js",
     "client": "npm --prefix client run dev",
     "dev": "concurrently \"npm run server:dev\" \"npm run client\"",
-    "build": "npm --prefix client install && npm --prefix client run build",
+    "build": "npm --prefix client install --include=dev && npm --prefix client run build",
     "seed": "node scripts/seed.js",
     "test": "node tests/integration.mjs"
   },
@@ -35,4 +35,3 @@
     "node": ">=18"
   }
 }
-
