@@ -1,0 +1,28 @@
+COMP229 Assignment 3 submission
+Vitaliy Kulesh — 301559060
+
+The attached assignment requires these three items:
+
+1. Upload Assignment3_SOURCE.zip, the portfolio source-code archive. Do not submit a RAR file.
+2. Provide the GitHub repository link:
+   https://github.com/vkulesh-netizen/COMP229-Assignment3-Portfolio
+3. Upload Assignment3_Required_Snapshot_Report.docx, the Word snapshot report organized under Parts I, II and III.
+
+The complete download package contains these files plus the supplementary walkthrough video and transcript. Extract it to obtain the individual files for submission.
+
+All submission links:
+https://github.com/vkulesh-netizen/COMP229-Assignment3-Portfolio/blob/main/docs/SUBMISSION.md
+
+Live portfolio:
+https://comp229-assignment3-portfolio.onrender.com/
+
+Video download:
+https://github.com/vkulesh-netizen/COMP229-Assignment3-Portfolio/raw/refs/heads/main/docs/Assignment3_Local_and_Hosted_Walkthrough.mp4
+
+Source ZIP download:
+https://github.com/vkulesh-netizen/COMP229-Assignment3-Portfolio/raw/refs/heads/main/docs/Assignment3_SOURCE.zip
+
+Word report download:
+https://github.com/vkulesh-netizen/COMP229-Assignment3-Portfolio/raw/refs/heads/main/docs/Assignment3_Required_Snapshot_Report.docx
+
+Before final submission: hosted administrator credentials and authenticated CRUD still need verification. Local administrator tests passed; those results do not establish hosted administrator functionality.
