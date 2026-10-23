@@ -39,7 +39,8 @@ const __dirname = path.dirname(__filename)
 const clientDist = path.resolve(__dirname, '../client/dist')
 
 if (config.env === 'production') {
-  app.use(express.static(clientDist))
+  app.use('/assets', express.static(path.join(clientDist,'assets'), {maxAge:'1y',immutable:true}))
+  app.use(express.static(clientDist, {maxAge:0}))
   app.get('*', (_req, res) => res.sendFile(path.join(clientDist, 'index.html')))
 } else {
   app.get('/', (_req, res) => {

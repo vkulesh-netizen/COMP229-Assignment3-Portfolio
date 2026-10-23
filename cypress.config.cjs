@@ -1,0 +1,2 @@
+const {defineConfig}=require('cypress')
+module.exports=defineConfig({video:true,viewportWidth:1280,viewportHeight:800,defaultCommandTimeout:15000,requestTimeout:30000,pageLoadTimeout:120000,e2e:{baseUrl:process.env.CYPRESS_BASE_URL||'http://localhost:3004',supportFile:false,specPattern:'cypress/e2e/**/*.cy.cjs'},reporter:'junit',reporterOptions:{mochaFile:'test-results/cypress-[hash].xml',toConsole:true}})

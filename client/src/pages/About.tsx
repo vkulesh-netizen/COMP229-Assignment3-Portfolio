@@ -14,6 +14,7 @@ function About() {
             className="profile-photo"
             src={profilePhoto}
             alt="Vitaliy Kulesh"
+            width="400" height="400" decoding="async"
           />
 
           <div className="card">

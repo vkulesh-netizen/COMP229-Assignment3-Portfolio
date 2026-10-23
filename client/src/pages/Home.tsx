@@ -30,6 +30,7 @@ function Home() {
               View Projects
             </Link>
           </div>
+          <p className="release-note">This portfolio brings together my software projects, education and engineering experience. Explore my work and get in touch to discuss practical technology solutions.</p>
         </div>
 
         <aside className="mission-card">

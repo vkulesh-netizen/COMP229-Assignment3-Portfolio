@@ -1,0 +1,48 @@
+name: Portfolio release checks
+on:
+  push:
+    branches: [main, assignment4-release]
+  pull_request:
+    branches: [main]
+permissions:
+  contents: read
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    services:
+      mongodb:
+        image: mongo:7
+        ports: ['27017:27017']
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+      - run: npm ci
+      - run: npm --prefix client ci
+      - run: npm --prefix client run test:unit
+      - run: npm test
+      - run: npm --prefix client run build
+      - name: Seed isolated verification database
+        run: npm run seed
+        env:
+          MONGODB_URI: mongodb://127.0.0.1:27017/PortfolioCypressCI
+      - name: Start production server
+        run: npm start > server.log 2>&1 &
+        env:
+          NODE_ENV: production
+          PORT: 3004
+          MONGODB_URI: mongodb://127.0.0.1:27017/PortfolioCypressCI
+          JWT_SECRET: ci-isolated-verification-secret
+      - name: Wait for server
+        run: for i in $(seq 1 30); do curl -fsS http://localhost:3004/api/health && exit 0; sleep 2; done; exit 1
+      - run: npm run test:e2e
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: cypress-evidence
+          path: |
+            cypress/videos
+            cypress/screenshots
+            test-results
