@@ -2,22 +2,23 @@ import { Route, Routes } from 'react-router-dom'
 import Navbar from './components/Navbar'
 import Footer from './components/Footer'
 import Home from './pages/Home'
-import About from './pages/About'
-import Projects from './pages/Projects'
-import Education from './pages/Education'
-import Services from './pages/Services'
-import Contact from './pages/Contact'
+import {lazy,Suspense} from 'react'
+const About=lazy(()=>import('./pages/About'))
+const Projects=lazy(()=>import('./pages/Projects'))
+const Education=lazy(()=>import('./pages/Education'))
+const Services=lazy(()=>import('./pages/Services'))
+const Contact=lazy(()=>import('./pages/Contact'))
 import './styles/App.css'
 import {AuthProvider} from './Auth'
-import Account from './pages/Account'
-import Admin from './pages/Admin'
+const Account=lazy(()=>import('./pages/Account'))
+const Admin=lazy(()=>import('./pages/Admin'))
 
 function App() {
   return (
     <AuthProvider><div className="app-shell">
       <Navbar />
       <main className="main-content">
-        <Routes>
+        <Suspense fallback={<p className="container" role="status">Loading page…</p>}><Routes>
           <Route path="/signin" element={<Account />} />
           <Route path="/signup" element={<Account signup />} />
           <Route path="/admin" element={<Admin />} />
@@ -27,7 +28,7 @@ function App() {
           <Route path="/education" element={<Education />} />
           <Route path="/services" element={<Services />} />
           <Route path="/contact" element={<Contact />} />
-        </Routes>
+        </Routes></Suspense>
       </main>
       <Footer />
     </div></AuthProvider>
