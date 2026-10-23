@@ -30,8 +30,12 @@ Regular visitors can browse and submit Contact Me messages. Registered users hav
 
 Use an Express-capable host with MongoDB Atlas. Build: npm install && npm run build. Start: npm start. Set NODE_ENV=production, MONGODB_URI, JWT_SECRET and CLIENT_ORIGIN to the live HTTPS origin. Express serves client/dist and the APIs from the same origin. A frontend-only Netlify/Vercel upload will not run the backend.
 
-## Submission still required
+## Submission links
 
-Publish the site, push source to your GitHub repository, record the local and hosted walkthrough, and prepare a Word document containing real screenshots. Supply the live URL, repository URL, source ZIP, video URL, and screenshot document. No deployment or GitHub publication is performed by this source package.
+- Live site: https://comp229-assignment3-portfolio.onrender.com/
+- GitHub: https://github.com/vkulesh-netizen/COMP229-Assignment3-Portfolio
+- [Video, Word screenshot report and source ZIP](docs/SUBMISSION.md)
 
-Original Assignment 2 Postman collection is retained as a starting point. For protected CRUD requests, sign in as admin and supply its Bearer token or cookie; old anonymous mutation requests should now fail.
+The public hosted pages and API health were verified, along with rejection of unauthenticated project writes. Local authentication and administrator CRUD workflows were tested. The report distinguishes local administrator evidence from hosted public-page evidence.
+
+The original Assignment 2 Postman collection is retained as a starting point. Protected CRUD requests require an administrator session or Bearer token.
