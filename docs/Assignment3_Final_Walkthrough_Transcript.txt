@@ -1,0 +1,53 @@
+Assignment 3 local and hosted walkthrough
+Captured browser states with synthetic narration. Local administrator workflows and hosted public pages are identified separately.
+
+1. Portfolio overview
+The original React portfolio design is preserved. This walkthrough uses the local Express server at localhost:3003.
+
+2. Account registration
+Registration uses a React form. In the demonstrated workflow, submitting it created a normal user and signed the user in. The backend prevents self-assigned admin roles.
+
+3. Reader permissions
+The registered reader cannot open administration. Server-side permission tests also reject reader writes with HTTP 403.
+
+4. Projects from MongoDB
+Projects are loaded from MongoDB through the Express API while retaining the original cards, illustrations and descriptions.
+
+5. Education from MongoDB
+Education and qualifications are also loaded from MongoDB. The seed preserves the original education entries.
+
+6. Complete contact form
+The contact form uses React state and sends all fields to the API, including the message and phone number.
+
+7. Administrator sign in
+The administrator signs in using the account seeded in MongoDB. Passwords are hashed and a JWT is stored in an HTTP-only cookie.
+
+8. Administration controls
+Only the administrator sees Manage. The management page provides add, edit and delete controls for projects, education and contacts.
+
+9. Project create and update
+Update: selecting Edit populates the form with the stored MongoDB record. The administrator changes its title and saves.
+
+10. Temporary project removed
+Delete: the temporary project was removed through the protected API. Reloading shows only the original portfolio records.
+
+11. Saved contact record
+Read: the administrator can inspect the submitted contact message, including its saved phone number and full message.
+
+12. Sign out
+Sign out clears the authentication cookie. The Manage link disappears and the visitor can sign in again.
+
+13. Live site on Render
+The portfolio is now live on Render at comp229-assignment3-portfolio.onrender.com. The original design is preserved.
+
+14. Hosted projects
+The hosted Projects page reads the seeded portfolio records from MongoDB Atlas through the Express API.
+
+15. Hosted education
+The hosted Education page loads the saved qualifications from MongoDB Atlas.
+
+16. Hosted API health
+The hosted API health endpoint returns status ok. Render logs confirm the server connected to the Portfolio database.
+
+17. Deployment status
+The local registration, role protection, portfolio data, contact storage and administrator workflows have been demonstrated. The source is published on GitHub as vkulesh-netizen slash COMP229-Assignment3-Portfolio. The live site runs on Render and stores data in MongoDB Atlas. Hosted project, education and health checks passed. Administrator CRUD is demonstrated in the local portion; a separate hosted administrator check remains.
