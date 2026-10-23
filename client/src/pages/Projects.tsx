@@ -31,7 +31,7 @@ function Projects() {
         <div className="grid grid-3">
           {PROJECTS.map((project) => (
             <article className="card project-card" key={project.title}>
-              <img src={project.image} alt={project.imageAlt} />
+              <img src={project.image} alt={project.imageAlt} loading="lazy" decoding="async" width="600" height="340" />
               <div className="card-body">
                 <h2>{project.title}</h2>
                 <p><strong>Role:</strong> {project.role}</p>
